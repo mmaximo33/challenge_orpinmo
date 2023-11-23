@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="omnipro_quickproductpositioning" resource="default" engine="innodb" comment="Position value ">
+        <column xsi:type="int" name="entity_id" comment="Emtity ID"
+                padding="10" unsigned="true" nullable="false"/>
+        <column xsi:type="int" name="product_id" comment="Product ID"
+                padding="10" unsigned="true" nullable="false"/>
+        <column xsi:type="int" name="position_value" comment="Position Marketing"
+                nullable="false" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <constraint xsi:type="foreign" referenceId="OMNIPRO_QUICKPRODUCTPOSITIONING_POSITION_VALUE_PRODUCT_ID_FOREIGN"
+                    table="omnipro_quickproductpositioning"
+                    column="product_id" referenceTable="catalog_product_entity" referenceColumn="entity_id"
+                    onDelete="CASCADE"/>
+    </table>
+</schema>
