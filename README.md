@@ -1,4 +1,4 @@
-# OMNI.PRO QUICK PRODUCT POSITIONING
+# OP | QUICK PRODUCT POSITIONING MODULE
 
 You can check the requirements of this module in the following link
 
@@ -7,6 +7,7 @@ You can check the requirements of this module in the following link
 - [Install](#install)
   - [Clone Script](#clone-script-)
   - [Clone Manual](#clone-manual)
+- [Developer documentation](#developer-documentation)
     
 ## Intro
 
@@ -58,6 +59,6 @@ magento c:c
 This option is not currently available for this module
 
 
-
-
+## Developer documentation
+You can find the documentation for the developer and a short explanation of how this module works in the following [link](doc/developer.md)
 
