@@ -34,4 +34,3 @@ Se espera un historial de Git conciso y documentado. Cuando el desarrollo haya t
 * Tiempo máximo para entregar es de 2 Dias
 
 ¡Buena suerte!
-
