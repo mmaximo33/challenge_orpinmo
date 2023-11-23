@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Omnipro_Modules::menu" title="Omnipro Modules" sortOrder="1">
+                    <resource id="Omnipro_QuickProductPositioning::setting" title="Quick Product Positioning" sortOrder="100" />
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

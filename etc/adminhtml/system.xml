@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="omnipro" translate="label" sortOrder="10">
+            <label>Omnipro</label>
+        </tab>
+        <section id="omnipro_quickproductpositioning" translate="label" sortOrder="1" showInDefault="1"
+            showInWebsite="1" showInStore="1">
+            <tab>omnipro</tab>
+            <class>separator-top</class>
+            <label>Quick Product Positioning</label>
+            <resource>Omnipro_QuickProductPositioning::setting</resource>
+            <group id="settings" translate="label comment" type="text" sortOrder="1"
+                showInDefault="1"
+                showInWebsite="0" showInStore="0">
+                <label>Settings</label>
+                <field id="info" translate="label comment" type="hidden" sortOrder="1"
+                    showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Information</label>
+                    <comment><![CDATA[
+                        <strong style="color:red">Warning!</strong><br/>
+                        To see the changes made to the frontend of your site. remember to
+                        <ul>
+                            <li>Cache flush <b>full_page</b></li>
+                            <li>Menu > System > Tools > Cache Management</li>
+                        </ul>
+                        ]]>
+                    </comment>
+                </field>
+                <field id="enable" translate="label comment" type="select" sortOrder="1"
+                    showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Feature Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
