@@ -2,17 +2,16 @@
 namespace Omnipro\QuickProductPositioning\Model\ResourceModel\Position;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
+use Omnipro\QuickProductPositioning\Model\Position;
+use Omnipro\QuickProductPositioning\Model\ResourceModel\Position as PositionResourceModel;
 
 class Collection extends AbstractCollection
 {
     /**
      * @return void
      */
-    public function _construct()
+    protected function _construct()
     {
-        $this->_init(
-            Omnipro\QuickProductPositioning\Model\Position::class,
-            Omnipro\QuickProductPositioning\Model\ResourceModel\Position::class
-        );
+        $this->_init(Position::class, PositionResourceModel::class);
     }
 }
